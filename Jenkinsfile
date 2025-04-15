@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Stage test') {
-            echo "$FRUIT is $COLOUR"
+            steps {
+                echo "$FRUIT is $COLOUR"
+            }
         }
     }
 }
